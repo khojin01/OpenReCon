@@ -1,0 +1,26 @@
+[project]
+name = "recon"
+version = "0.1.0"
+description = "ReCon: Improving the Accuracy of Community Detection on Signed Networks"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "argparse==1.1.0",
+    "latextable==0.1.1",
+    "matplotlib==3.3.4",
+    "networkx==2.5",
+    "numpy>=2.2.6",
+    "pandas>=2.3.3",
+    "scikit-learn>=1.5.0",
+    "scipy>=1.15.3",
+    "texttable==1.6.3",
+    "torch==2.5.1",
+    "torch-geometric>=2.7.0",
+    "tqdm==4.66.3",
+    "streamlit>=1.32.0",
+    "plotly>=5.18.0",
+    "seaborn>=0.13.0",
+]
+
+[project.optional-dependencies]
+viz = ["umap-learn>=0.5.3"]

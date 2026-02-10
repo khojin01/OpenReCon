@@ -1,0 +1,83 @@
+/* ReCon GUI 글씨 크기 조절 CSS */
+
+/* 전체 기본 글씨 크기 */
+.stApp {
+    font-size: 16px !important;
+}
+
+/* 제목 크기 조절 */
+h1 {
+    font-size: 2.5rem !important;
+}
+
+h2 {
+    font-size: 2.0rem !important;
+}
+
+h3 {
+    font-size: 1.5rem !important;
+}
+
+/* 사이드바 글씨 크기 */
+.css-1d391kg {
+    font-size: 14px !important;
+}
+
+/* 메인 컨텐츠 영역 */
+.stMarkdown {
+    font-size: 16px !important;
+}
+
+/* 버튼 글씨 크기 */
+.stButton > button {
+    font-size: 14px !important;
+}
+
+/* 데이터프레임 글씨 크기 */
+.stDataFrame {
+    font-size: 14px !important;
+}
+
+/* 메트릭 디스플레이 */
+.stMetric {
+    font-size: 14px !important;
+}
+
+/* 입력 필드 */
+.stTextInput > div > input,
+.stNumberInput > div > input,
+.stSelectbox > div > select {
+    font-size: 14px !important;
+}
+
+/* 캡션 글씨 크기 */
+.stCaption {
+    font-size: 12px !important;
+}
+
+/* 코드 블록 */
+.stCode {
+    font-size: 13px !important;
+}
+
+/* 작은 글씨 (fine print) */
+.small-text {
+    font-size: 12px !important;
+}
+
+/* 큰 글씨 (강조) */
+.large-text {
+    font-size: 18px !important;
+    font-weight: bold;
+}
+
+/* 테이블 헤더 */
+.dataframe th {
+    font-size: 14px !important;
+    font-weight: bold;
+}
+
+/* 테이블 셀 */
+.dataframe td {
+    font-size: 13px !important;
+}
