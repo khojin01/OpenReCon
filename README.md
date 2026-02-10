@@ -2,7 +2,7 @@
 
 # ReCon: Improving the Accuracy of Community Detection on Signed Networks via Community Refinement and Contrastive Learning
 
-Hyunuk Shin<sup>*, 1</sup> · Hojin Kim<sup>*, 1</sup> · Chanyoung Lee<sup>*, 1</sup> · Yeon-Chang Lee<sup>2</sup> · David Yoon Suk Kang<sup>†, 1</sup>
+Hojin Kim<sup>*, 1</sup> · Hyunuk Shin<sup>*, 1</sup> · Chanyoung Lee<sup>*, 1</sup> · Yeon-Chang Lee<sup>2</sup> · David Yoon Suk Kang<sup>†, 1</sup>
 
 <sup>1</sup> Chungbuk National University · <sup>2</sup> Ulsan National Institute of Science and Technology
 
@@ -40,15 +40,30 @@ Launch the interactive web interface:
 uv run streamlit run app.py
 ```
 
+Or use the helper scripts:
+```bash
+./run_gui.sh
+./run_gui_conda.sh
+```
+
 The GUI provides:
-- 🎯 Interactive parameter configuration
-- 📊 Real-time progress tracking
-- 📈 Interactive visualizations (network graphs, cluster distributions, metrics)
-- � **Refinement process visualization** (purge/import/refine animations)
-- 🎬 Animated timeline showing node movements across iterations
-- 🌊 Sankey diagrams for cluster flow analysis
-- �💾 Easy result export (CSV format)
-- 🔍 Support for file upload (.pt/.pk) or example datasets
+- 🎯 Interactive parameter configuration (K, initial method, iterations, device, seed)
+- 🔧 Advanced refinement/re-clustering settings (alpha/beta/neg weight, method)
+- 📁 Data input via upload (.pt/.pk) or built-in examples
+- 📊 Real-time progress and metric comparison (initial vs final)
+- 🎬 Animated refinement process (purge/import/refine) with timeline
+- 📈 Cluster size evolution and Sankey flow analysis
+- 💾 Result export (clusters + metrics CSV)
+
+Supported data formats:
+- **.pt**: PyTorch tensors via `torch.load`
+- **.pk**: pickle via `pickle.load`
+
+Expected data dictionary keys:
+- `A_p`: Positive adjacency matrix
+- `A_n`: Negative adjacency matrix
+- `feat_L` (optional): Node features
+- `labels` or `y` (optional): Ground truth labels
 
 ### Command Line Interface
 ```bash
@@ -59,7 +74,7 @@ uv run python main.py --data-path data/SSBM/N1000_K5_p0.01_eta0.02.pt --initial-
 ```
 @article{shin2025recon,
   title={ReCon: Improving the Accuracy of Community Detection on Signed Networks via Community Refinement and Contrastive Learning},
-  author={Hyunuk Shin, Hojin Kim, Chanyoung Lee, Yeon-Chang Lee, and David Yoon Suk Kang},
+  author={Hojin Kim, Hyunuk Shin, Chanyoung Lee, Yeon-Chang Lee, and David Yoon Suk Kang},
   journal={arXiv preprint arXiv:XXXX.XXXXX},
   year={2026}
 }
