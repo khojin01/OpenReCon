@@ -1,10 +1,7 @@
 #!/bin/bash
 
-echo "Starting ReCon GUI Application..."
-echo "=================================="
-echo ""
-echo "The application will open in your default browser."
-echo "If it doesn't open automatically, navigate to: http://localhost:8501"
-echo ""
+source /home/dms1/anaconda3/etc/profile.d/conda.sh
+conda activate ct5090
 
-uv run streamlit run app.py
+export PYTHONNOUSERSITE=1
+python -m streamlit run app.py

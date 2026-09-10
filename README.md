@@ -2,27 +2,27 @@
 
 # ReCon: Improving the Accuracy of Community Detection on Signed Networks via Community Refinement and Contrastive Learning
 
-Hojin Kim<sup>*, 1</sup> · Hyunuk Shin<sup>*, 1</sup> · Chanyoung Lee<sup>*, 1</sup> · Yeon-Chang Lee<sup>2</sup> · David Yoon Suk Kang<sup>†, 1</sup>
+Hojin Kim<sup> 1</sup> · Bogoan Kim<sup> </sup> · David Yoon Suk Kang<sup>†
 
-<sup>1</sup> Chungbuk National University · <sup>2</sup> Ulsan National Institute of Science and Technology
+<sup></sup> Chungbuk National University · 
 
 <p align="center">
-  <img src="./assets/figure.png" alt="Result" style="width:70%;">
+  <img src="./assets/figure_main.png" alt="Result" style="width:70%;">
+  <img src="./assets/figure.gif" alt="Result" style="width:70%;">
 </p>
 
 
 </div>
 
 
-## Setup
-We ran the experiments in the following environment:
-```
-- ubuntu: 24.04
-- python: 3.10
-- cuda: 12.5
-- pytorch: 2.5.1
-- GPU: RTX 3090
-```
+For reproduction on NVIDIA Blackwell GPUs, we additionally tested the code in the following environment:
+
+- OS: Ubuntu 24.04
+- Python: 3.10
+- PyTorch: 2.11.0
+- PyTorch CUDA runtime: 12.8
+- NVIDIA driver: 580.173.02
+- GPU: NVIDIA GeForce RTX 5090
 
 ## Installation
 ```bash
@@ -67,15 +67,17 @@ Expected data dictionary keys:
 
 ### Command Line Interface
 ```bash
-uv run python main.py --data-path data/SSBM/N1000_K5_p0.01_eta0.02.pt --initial-method SPONGE --K 5
+./run_gui.sh
 ```
 
-## Citation
-```
-@article{shin2025recon,
-  title={ReCon: Improving the Accuracy of Community Detection on Signed Networks via Community Refinement and Contrastive Learning},
-  author={Hojin Kim, Hyunuk Shin, Chanyoung Lee, Yeon-Chang Lee, and David Yoon Suk Kang},
-  journal={arXiv preprint arXiv:XXXX.XXXXX},
-  year={2026}
-}
-```
+## Code Metadata
+| Nr. | Code metadata description | Metadata |
+| --- | --- | --- |
+| C1 | Current code version | 0.1.0 |
+| C2 | Permanent link to code/repository used for this code version | (GitHub release or commit permalink to be filled) |
+| C3 | Permanent link to Reproducible Capsule | (Zenodo DOI or capsule link to be filled) |
+| C4 | Legal Code License | MIT License || C5 | Code versioning system used | Git |
+| C6 | Software code languages, tools, and services used | Python 3.10, Streamlit, PyTorch 2.11.0, PyTorch Geometric, torch-scatter, scikit-learn, SciPy, NumPy, Pandas, NetworkX, Plotly |
+| C7 | Compilation requirements, operating environments & dependencies | Ubuntu 24.04; NVIDIA GPU recommended; NVIDIA RTX 5090 tested; NVIDIA driver 580.173.02; PyTorch built with CUDA 12.8 or later and support for compute capability `sm_120` required |
+| C8 | If available, link to developer documentation/manual | README.md |
+| C9 | Support email for questions | khojin.01@cbnu.ac.kr |
