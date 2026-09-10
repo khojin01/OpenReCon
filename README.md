@@ -7,8 +7,8 @@ Hojin Kim<sup> 1</sup> · Bogoan Kim<sup> </sup> · David Yoon Suk Kang<sup>†
 <sup></sup> Chungbuk National University · 
 
 <p align="center">
-  <img src="./assets/figure_main.png" alt="Result" style="width:70%;">
-  <img src="./assets/figure.gif" alt="Result" style="width:70%;">
+  <img src="./assets/figure_main.png" alt="Result" style="width:100%;">
+  <img src="./assets/figure.gif" alt="Result" style="width:100%;">
 </p>
 
 
