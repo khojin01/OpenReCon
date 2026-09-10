@@ -1,6 +1,6 @@
 <div align="center">
 
-# ReCon: Improving the Accuracy of Community Detection on Signed Networks via Community Refinement and Contrastive Learning
+# OpenReCon: A GUI-Driven Post-ProcessingSoftware for Improving the Accuracy of SignedCommunity Detection
 
 Hojin Kim<sup> 1</sup> · Bogoan Kim<sup> </sup> · David Yoon Suk Kang<sup>†
 
